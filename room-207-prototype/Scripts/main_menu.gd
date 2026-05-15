@@ -26,6 +26,7 @@ func _ready():
 		push_error("Credits button not found! Check node name.")
 
 func _on_new_game_pressed():
+	$AnimationPlayer.play("NewGame")
 	print("New Game button pressed")
 
 func _on_options_pressed():
