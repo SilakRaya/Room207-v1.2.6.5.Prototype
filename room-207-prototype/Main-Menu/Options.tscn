@@ -23,7 +23,7 @@ offset_bottom = 385.0
 text = "Options Menu"
 label_settings = SubResource("LabelSettings_f2g1h")
 
-[node name="Button" type="Button" parent="." unique_id=788202050]
+[node name="GO BACK" type="Button" parent="." unique_id=788202050]
 offset_left = 464.0
 offset_top = 409.0
 offset_right = 791.0
@@ -35,4 +35,4 @@ text = "GO BACK"
 flat = true
 script = ExtResource("3_cf3j2")
 
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="GO BACK" to="GO BACK" method="_on_pressed"]
