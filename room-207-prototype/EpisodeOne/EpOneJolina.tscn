@@ -12,7 +12,7 @@ font_color = Color(0, 0, 0, 1)
 [node name="EpisodeOne" type="Node2D" unique_id=593612717]
 
 [node name="Instance25" type="Sprite2D" parent="." unique_id=2110446789]
-position = Vector2(627, 374)
+position = Vector2(669, 387)
 texture = ExtResource("1_a1mft")
 
 [node name="Label" type="Label" parent="." unique_id=1023112734]
