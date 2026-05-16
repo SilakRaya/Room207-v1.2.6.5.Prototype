@@ -17,6 +17,82 @@ font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_ym82n"]
 resource_name = "EpisodeSelect"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("JolinaFrown:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(310.9091, 28.181824), Vector2(950, 49.090904)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MarvinPlaceholder:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.033333335, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(191.81816, 429.09088), Vector2(-425.45453, 434.5454)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Marvin:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(372.72726, 400), Vector2(-249.0909, 403.63635)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("GO BACK:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.033333335, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(438.18182, 516.3636), Vector2(445.45453, 876.36365)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Room207:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.033333335, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(372.72726, 53.636368), Vector2(370.9091, -150)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Control:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.53333336, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-647.2727, 275.45453), Vector2(-652.72723, 1109.0908)]
+}
+
+[sub_resource type="Animation" id="Animation_48x7w"]
+resource_name = "EpisodeSelection"
 
 [sub_resource type="Animation" id="Animation_dmqj3"]
 resource_name = "NewGame"
@@ -336,6 +412,18 @@ tracks/13/keys = {
 "update": 0,
 "values": [Vector2(-1242.7273, -1014.5454)]
 }
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Control:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-647.2727, 275.45453)]
+}
 
 [sub_resource type="Animation" id="Animation_x84d5"]
 resource_name = "eraseTransition"
@@ -368,6 +456,7 @@ tracks/1/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_du1xd"]
 _data = {
 &"EpisodeSelect": SubResource("Animation_ym82n"),
+&"EpisodeSelection": SubResource("Animation_48x7w"),
 &"NewGame": SubResource("Animation_dmqj3"),
 &"RESET": SubResource("Animation_vwu2b"),
 &"eraseTransition": SubResource("Animation_x84d5")
@@ -402,8 +491,8 @@ anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -332.0
 offset_top = 70.0
-offset_right = 323.0
-offset_bottom = 270.00015
+offset_right = 323.00208
+offset_bottom = 270.0001
 grow_horizontal = 2
 text = "ROOM207"
 label_settings = SubResource("LabelSettings_7r1g0")
@@ -422,8 +511,8 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -123.0
 offset_top = -68.0
-offset_right = 120.00012
-offset_bottom = 3.000061
+offset_right = 120.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -441,8 +530,8 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -125.5
 offset_top = 21.5
-offset_right = 117.49841
-offset_bottom = 92.50018
+offset_right = 117.49707
+offset_bottom = 92.50012
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -460,7 +549,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -128.0
 offset_top = 111.0
-offset_right = 114.99878
+offset_right = 114.99756
 offset_bottom = 182.00067
 grow_horizontal = 2
 grow_vertical = 2
@@ -479,8 +568,8 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -123.5
 offset_top = 199.5
-offset_right = 119.5
-offset_bottom = 270.5
+offset_right = 119.49878
+offset_bottom = 270.50012
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -516,7 +605,7 @@ texture = ExtResource("7_du1xd")
 layout_mode = 0
 offset_left = 372.72726
 offset_top = 1118.1818
-offset_right = 607.7278
+offset_right = 607.7275
 offset_bottom = 1204.1823
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_iwfq2")
@@ -528,7 +617,7 @@ flat = true
 layout_mode = 0
 offset_left = 450.9091
 offset_top = 1161.8181
-offset_right = 777.9104
+offset_right = 777.90906
 offset_bottom = 1271.8181
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_iwfq2")
@@ -547,6 +636,81 @@ rotation = 0.72650456
 scale = Vector2(1.6051381, 1.5519004)
 color = Color(0, 0, 0, 1)
 
+[node name="Control" type="Control" parent="." unique_id=927355696]
+anchors_preset = 0
+offset_left = -647.2727
+offset_top = 275.45453
+offset_right = -607.2727
+offset_bottom = 315.45435
+
+[node name="Room207" type="Label" parent="Control" unique_id=949001593]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 876.36365
+offset_top = -1079.9999
+offset_right = 1966.3636
+offset_bottom = -879.99976
+grow_horizontal = 2
+scale = Vector2(0.635, 0.635)
+text = "EPISODE SELECT"
+label_settings = SubResource("LabelSettings_7r1g0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=485655892]
+layout_mode = 0
+offset_left = 1089.9999
+offset_top = -947.2726
+offset_right = 1629.9999
+offset_bottom = -129.8064
+scale = Vector2(0.56791556, 0.56791556)
+
+[node name="EpisodeOne" type="Button" parent="Control/VBoxContainer" unique_id=1421208314]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_iwfq2")
+theme_override_font_sizes/font_size = 150
+text = "EPISODE 1"
+flat = true
+
+[node name="EpisodeTwo" type="Button" parent="Control/VBoxContainer" unique_id=1744910712]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_iwfq2")
+theme_override_font_sizes/font_size = 150
+text = "EPISODE 2"
+flat = true
+
+[node name="EpisodeThree" type="Button" parent="Control/VBoxContainer" unique_id=1704130322]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_iwfq2")
+theme_override_font_sizes/font_size = 150
+text = "EPISODE 3"
+flat = true
+
+[node name="EpisodeFour" type="Button" parent="Control/VBoxContainer" unique_id=2132246247]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_iwfq2")
+theme_override_font_sizes/font_size = 150
+text = "EPISODE 4"
+flat = true
+
+[node name="EpisodeFive" type="Button" parent="Control/VBoxContainer" unique_id=1947729945]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_iwfq2")
+theme_override_font_sizes/font_size = 150
+text = "EPISODE 5"
+flat = true
+
 [node name="Hand" parent="." unique_id=1138066097 instance=ExtResource("9_48x7w")]
 position = Vector2(964.5454, 519.0909)
 
@@ -557,3 +721,8 @@ position = Vector2(964.5454, 519.0909)
 [connection signal="pressed" from="JolinaFrown/Jolina" to="." method="_on_jolina_pressed"]
 [connection signal="pressed" from="Marvin" to="." method="_on_marvin_pressed"]
 [connection signal="pressed" from="GO BACK" to="GO BACK" method="_on_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/EpisodeOne" to="." method="_on_episode_one_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/EpisodeTwo" to="." method="_on_episode_two_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/EpisodeThree" to="." method="_on_episode_three_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/EpisodeFour" to="." method="_on_episode_four_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/EpisodeFive" to="." method="_on_episode_five_pressed"]

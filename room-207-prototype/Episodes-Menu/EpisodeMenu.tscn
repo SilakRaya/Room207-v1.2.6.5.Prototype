@@ -1,5 +1,14 @@
 [gd_scene format=3 uid="uid://cmxetrahdjyrk"]
 
+[ext_resource type="Texture2D" uid="uid://bix07m6hwcm0u" path="res://SilakRayaIntro/textures/instance25.png" id="1_225vk"]
+[ext_resource type="FontFile" uid="uid://4scieg81k82o" path="res://Fonts/fibre-font.otf" id="2_571fj"]
+[ext_resource type="Script" uid="uid://c08sghksh2358" path="res://Scripts/button.gd" id="3_4xag7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vpj7i"]
+font = ExtResource("2_571fj")
+font_size = 140
+font_color = Color(0, 0, 0, 1)
+
 [node name="EpisodeMenu" type="Control" unique_id=815949029]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +16,32 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Instance25" type="Sprite2D" parent="." unique_id=1868243532]
+position = Vector2(627, 374)
+texture = ExtResource("1_225vk")
+
+[node name="Label" type="Label" parent="." unique_id=1943702198]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 261.0
+offset_right = 1187.6024
+offset_bottom = 401.0
+scale = Vector2(0.83, 0.83)
+text = "Episode in works"
+label_settings = SubResource("LabelSettings_vpj7i")
+
+[node name="GO BACK" type="Button" parent="." unique_id=1688653041]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 409.0
+offset_right = 791.0
+offset_bottom = 519.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_571fj")
+theme_override_font_sizes/font_size = 101
+text = "GO BACK"
+flat = true
+script = ExtResource("3_4xag7")
+
+[connection signal="pressed" from="GO BACK" to="GO BACK" method="_on_pressed"]
