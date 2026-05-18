@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bfe3f8xm5kpcp"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_v5wi0"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_h52q0"]
+
+[node name="Test3d" type="Node3D" unique_id=1168918860]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=148196124]
+transform = Transform3D(1.8352035, -0.18751901, 0.8449573, 0.5306039, 0.9732592, 0, -1.2984829, 0.13267753, 1.1942154, -2.7778502, -0.22664034, 0.7578709)
+mesh = SubResource("BoxMesh_v5wi0")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1480772963]
+transform = Transform3D(1.8352035, -0.18751901, 0.8449573, 0.5306039, 0.9732592, 0, -1.2984829, 0.13267753, 1.1942154, 3.968509, 0.19761503, -0.5852876)
+mesh = SubResource("BoxMesh_v5wi0")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1340546668]
+transform = Transform3D(6.940426, 0, 0, 0, 1, 0, 0, 0, 1.4629091, 0, 0, 0)
+mesh = SubResource("BoxMesh_v5wi0")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1064062006]
+transform = Transform3D(4.3569007, 0, -0.34148005, 0, 2.192894, 0, -3.881993, 0, -0.38325533, -3.6450155, 0.9566519, -3.5480113)
+mesh = SubResource("PrismMesh_h52q0")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="." unique_id=1725540540]
+transform = Transform3D(7.6893654, 0, -0.43111032, 0, 2.192894, 0, -4.5808725, 0, -0.72365373, -9.0606365, 0.9566519, -12.146042)
+mesh = SubResource("PrismMesh_h52q0")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=1795413100]
+transform = Transform3D(3.292078, 0, -1.8071723, 0, 2.192894, 0, 3.7391255, 0, 1.591108, 3.2188234, 0.9566519, -3.5480113)
+mesh = SubResource("PrismMesh_h52q0")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1925994418]
+transform = Transform3D(1, 0, 0, 0, 0.89893174, 0.43808877, 0, -0.43808877, 0.89893174, -0.21877527, 2.5706975, 2.8842838)
