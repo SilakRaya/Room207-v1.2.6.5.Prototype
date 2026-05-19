@@ -720,7 +720,7 @@ flat = true
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
-text = "VER: 1.0.0"
+text = "VER: 1.1.1"
 label_settings = SubResource("LabelSettings_48x7w")
 
 [node name="Hand" parent="." unique_id=1138066097 instance=ExtResource("9_48x7w")]

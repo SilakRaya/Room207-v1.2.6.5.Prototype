@@ -55,11 +55,13 @@ func _on_episode_one_pressed() -> void:
 	match characterSelects:
 		"Jolina":
 			print("Jolina selected")
-			get_tree().change_scene_to_file("res://EpisodeOne/EpOneJolina.tscn")
+			#Points to episode one
+			get_tree().change_scene_to_file("res://EpisodeOne/Acts/ActOne.tscn")
 			
 		"Marvin":
 			print("Marvin selected")
-			get_tree().change_scene_to_file("res://EpisodeOne/EpOneMarvin.tscn")
+			#Points to episode one
+			get_tree().change_scene_to_file("res://EpisodeOne/Acts/ActOne.tscn")
 			
 
 

@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cycf6nqyufeb2"]
+
+[ext_resource type="PackedScene" uid="uid://ba3cri2tixfs4" path="res://EpisodeOne/Acts/grass_ground.tscn" id="1_0gejb"]
+[ext_resource type="PackedScene" uid="uid://brsx72wq4rjqk" path="res://EpisodeOne/Characters/Jolina.tscn" id="2_270pr"]
+[ext_resource type="PackedScene" uid="uid://b34ocdntd2jmf" path="res://EpisodeOne/Acts/bush.tscn" id="3_270pr"]
+
+[node name="Hometown" type="Node3D" unique_id=2128227061]
+
+[node name="grass_ground" parent="." unique_id=1742627122 instance=ExtResource("1_0gejb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 29.82776, 0)
+
+[node name="CharacterBody3D" parent="." unique_id=1425489057 instance=ExtResource("2_270pr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 35.07509, 35.5802)
+
+[node name="Bush" parent="." unique_id=941488171 instance=ExtResource("3_270pr")]
+transform = Transform3D(0.225, 0, 0, 0, 0.225, 0, 0, 0, 0.22499996, -3.886385, 25.697695, 26.946367)
+
+[node name="Bush2" parent="." unique_id=1867660494 instance=ExtResource("3_270pr")]
+unique_name_in_owner = true
+transform = Transform3D(0.225, 0, 0, 0, 0.225, 0, 0, 0, 0.22499996, 1.7285953, 25.697695, 31.216173)
+
+[node name="Bush3" parent="." unique_id=2014184788 instance=ExtResource("3_270pr")]
+unique_name_in_owner = true
+transform = Transform3D(0.225, 0, 0, 0, 0.225, 0, 0, 0, 0.22499996, 1.7285953, 25.697695, 31.216173)
+
+[node name="Bush4" parent="." unique_id=861753781 instance=ExtResource("3_270pr")]
+unique_name_in_owner = true
+transform = Transform3D(0.20701988, 0, 0.08813494, 0, 0.225, 0, -0.08813495, 0, 0.20701985, -15.558659, 25.697695, 31.216173)
+
+[node name="Bush5" parent="." unique_id=1925333801 instance=ExtResource("3_270pr")]
+unique_name_in_owner = true
+transform = Transform3D(0.21005276, 0, -0.08064014, 0, 0.22500002, 0, 0.080640145, 0, 0.21005276, 7.5236073, 25.697695, 20.609644)
