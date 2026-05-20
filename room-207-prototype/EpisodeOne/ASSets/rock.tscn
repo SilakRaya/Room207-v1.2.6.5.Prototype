@@ -8,7 +8,7 @@
 [node name="Rock" type="Node3D" unique_id=93286859]
 script = ExtResource("1_s4a72")
 
-[node name="Rock1" type="StaticBody3D" parent="." unique_id=1499187448]
+[node name="Rock1" type="StaticBody3D" parent="." unique_id=428436189]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Rock1" unique_id=834201387]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.117152214, 0, 0)
@@ -18,7 +18,7 @@ shape = SubResource("BoxShape3D_s4a72")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15239644, 0, 0)
 texture = ExtResource("1_l3tv6")
 
-[node name="Rock2" type="StaticBody3D" parent="." unique_id=590286991]
+[node name="Rock2" type="StaticBody3D" parent="." unique_id=1890479214]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7126026, 0, 0)
 
@@ -29,7 +29,7 @@ shape = SubResource("BoxShape3D_s4a72")
 [node name="Sprite3D" type="Sprite3D" parent="Rock2" unique_id=1057547699]
 texture = ExtResource("1_l3tv6")
 
-[node name="Rock3" type="StaticBody3D" parent="." unique_id=682822951]
+[node name="Rock3" type="StaticBody3D" parent="." unique_id=1188894788]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0573754, 0, 0)
 
@@ -40,7 +40,7 @@ shape = SubResource("BoxShape3D_s4a72")
 [node name="Sprite3D" type="Sprite3D" parent="Rock3" unique_id=1122072957]
 texture = ExtResource("1_l3tv6")
 
-[node name="Rock4" type="StaticBody3D" parent="." unique_id=158751455]
+[node name="Rock4" type="StaticBody3D" parent="." unique_id=1223197541]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9030933, 0, 0.1326853)
 
@@ -51,7 +51,7 @@ shape = SubResource("BoxShape3D_s4a72")
 [node name="Sprite3D" type="Sprite3D" parent="Rock4" unique_id=1973341318]
 texture = ExtResource("1_l3tv6")
 
-[node name="Rock5" type="StaticBody3D" parent="." unique_id=1545972019]
+[node name="Rock5" type="StaticBody3D" parent="." unique_id=1277219102]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.489294, 0, 0.10518181)
 
