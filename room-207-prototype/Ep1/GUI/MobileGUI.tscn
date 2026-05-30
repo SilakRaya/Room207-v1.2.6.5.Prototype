@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://bldaeyhmw4g4c"]
 
+[ext_resource type="Texture2D" uid="uid://cqlya3pwemonw" path="res://icon.svg" id="1_4gala"]
+[ext_resource type="Script" uid="uid://ddqpjauuwfref" path="res://Ep1/GUI/mobile_gui.gd" id="1_uwoms"]
+
 [node name="MobileGui" type="Control" unique_id=465481812]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +10,95 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_uwoms")
+metadata/_edit_use_anchors_ = true
+
+[node name="Movement" type="MarginContainer" parent="." unique_id=680615818]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -186.0
+offset_right = 334.0
+grow_vertical = 0
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Movement" unique_id=106487835]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Left_Movement" type="Button" parent="Movement/HSplitContainer" unique_id=1706527737]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(0.4664079, 0.17251751, 0.20841059, 1)
+text = "Left"
+icon = ExtResource("1_4gala")
+icon_alignment = 1
+
+[node name="Right_Movement" type="Button" parent="Movement/HSplitContainer" unique_id=103817684]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(0.4664079, 0.17251751, 0.20841059, 1)
+text = "Right"
+icon = ExtResource("1_4gala")
+icon_alignment = 1
+
+[node name="Dialogue" type="MarginContainer" parent="." unique_id=1142431709]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7390625
+anchor_top = 0.7416667
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+metadata/_edit_use_anchors_ = true
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Dialogue" unique_id=2038216346]
+layout_mode = 2
+
+[node name="Skip" type="Button" parent="Dialogue/HSplitContainer" unique_id=712070386]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(0.4664079, 0.17251751, 0.20841059, 1)
+text = "Skip"
+icon = ExtResource("1_4gala")
+icon_alignment = 1
+
+[node name="Continue" type="Button" parent="Dialogue/HSplitContainer" unique_id=71313996]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(0.4664079, 0.17251751, 0.20841059, 1)
+text = "Continue"
+icon = ExtResource("1_4gala")
+icon_alignment = 1
+
+[node name="Pause" type="MarginContainer" parent="." unique_id=1726356684]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.07265625
+anchor_bottom = 0.12916666
+offset_right = 43.0
+offset_bottom = 43.0
+scale = Vector2(0.5, 0.5)
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+metadata/_edit_use_anchors_ = true
+
+[node name="_Pause" type="Button" parent="Pause" unique_id=1828215077]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(0.4664079, 0.17251751, 0.20841059, 1)
+text = "Skip"
+icon = ExtResource("1_4gala")
+icon_alignment = 1
+
+[connection signal="pressed" from="Movement/HSplitContainer/Left_Movement" to="." method="_on_left_movement_pressed"]
+[connection signal="pressed" from="Movement/HSplitContainer/Right_Movement" to="." method="_on_right_movement_pressed"]
+[connection signal="pressed" from="Dialogue/HSplitContainer/Continue" to="." method="_on_continue_pressed"]

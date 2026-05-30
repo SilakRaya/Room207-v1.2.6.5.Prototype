@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b4t83ss3mw30s" path="res://Ep1/GUI/Dialogue.tscn" id="3_jt7db"]
 [ext_resource type="PackedScene" uid="uid://dt2xykj4k2h6m" path="res://Ep1/Characters/Jolina.tscn" id="4_qw24q"]
 [ext_resource type="Texture2D" uid="uid://cqlya3pwemonw" path="res://icon.svg" id="5_htubx"]
+[ext_resource type="PackedScene" uid="uid://bldaeyhmw4g4c" path="res://Ep1/GUI/MobileGUI.tscn" id="5_y5w6v"]
 
 [sub_resource type="Animation" id="Animation_jpnmx"]
 resource_name = "Firefly"
@@ -110,7 +111,7 @@ offset_right = 640.0
 offset_bottom = 152.0
 grow_horizontal = 1
 grow_vertical = 1
-_Jolina_Lines = Array[String](["...", "Where am I?", "Oh-", "I-", "I had the same dream again-"])
+_Jolina_Lines = Array[String](["...", "Where am I?", "Oh-", "I-", "I had the same dream again-", "This is just the demo!", "Stay Tuned!"])
 metadata/_edit_use_anchors_ = true
 
 [node name="Jolina" parent="." unique_id=810497922 instance=ExtResource("4_qw24q")]
@@ -137,3 +138,7 @@ text = "don't mind me im just a dummy test if the camera
 is really zooming out"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=421710373]
+
+[node name="MobileGui" parent="CanvasLayer" unique_id=465481812 instance=ExtResource("5_y5w6v")]

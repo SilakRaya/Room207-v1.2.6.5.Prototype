@@ -17,8 +17,9 @@ var typing:bool = false
 func _ready() -> void:
 	displayText(_Jolina_Lines[dialogue])
 
-func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed("switch"):
+func _process(_delta):
+	if Input.is_action_just_pressed("mobile_dialogue"):
+		print("Detected")
 		switchText()
 
 # Abstraction
