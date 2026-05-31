@@ -35,7 +35,7 @@ Originally a rushed comic from senior high school, we're now reimagining it with
 > Inspired by games like *Until Then*, we want to create a story-driven experience that feels personal, atmospheric, and heartfelt.
 
 This repo documents the **polished vision** of the game.  
-> 📝 *For messy drafts, scrapped ideas, and raw storytelling notes, check out our [Wiki]([https://github.com/SobrepenaKenneth/Room-207-Prototype/wiki](https://github.com/SilakRaya/Room207-Prototype/wiki)) (coming soon).*
+> 📝 *For messy drafts, scrapped ideas, and raw storytelling notes, check out our [Wiki](https://github.com/SilakRaya/Room207-Prototype/wiki).*
 
 <br>
 
@@ -76,7 +76,7 @@ The README above presents the **polished vision** of *Room 207*.
 
 But if you want to dive into the **rough drafts, scrapped storylines, and unfiltered creative process** behind the game:
 
-> 🚪 **[Enter the WIKI →](https://github.com/SilakRaya/Room207-Prototype/wiki)**  
+> 🚪 **Episode One - Rough (Draft)** is now available in the **WIKI** →  
+> [https://github.com/SilakRaya/Room207-v1.0.0.Prototype/wiki](https://github.com/SilakRaya/Room207-v1.0.0.Prototype/wiki)
+>
 > *Warning: This is where the messy, unpolished ideas live. Expect inconsistencies, half-finished thoughts, and the real evolution of the story.*
-
-*(Wiki content is being added as I write — check back for updates!)*
