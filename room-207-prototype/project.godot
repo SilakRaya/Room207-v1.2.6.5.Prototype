@@ -33,7 +33,7 @@ project/assembly_name="Room207-Prototype"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/light_shape_2d/plugin.cfg")
+enabled=PackedStringArray()
 
 [file_customization]
 

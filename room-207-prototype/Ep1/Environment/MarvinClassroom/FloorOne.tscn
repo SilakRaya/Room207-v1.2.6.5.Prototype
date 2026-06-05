@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cjtt2oosf50k4"]
 
-[ext_resource type="Script" uid="uid://oyfspcne8ya8" path="res://Ep1/Scenes/scene_a_2.gd" id="1_27dpn"]
 [ext_resource type="AudioStream" uid="uid://cklddr5fp7uqh" path="res://Ost/86304_newgrounds_eerie_.mp3" id="2_cdqbc"]
+[ext_resource type="Script" uid="uid://ea61sjshx1fs" path="res://Ep1/Scenes/dialogue_event.gd" id="2_moit6"]
+[ext_resource type="Script" uid="uid://0o0r4ybyg4uc" path="res://Ep1/Scenes/camera_event.gd" id="3_1jegp"]
 [ext_resource type="Texture2D" uid="uid://cqlya3pwemonw" path="res://icon.svg" id="3_11hwv"]
-[ext_resource type="PackedScene" uid="uid://wujnri773tap" path="res://Ep1/Environment/MarvinHallway/MarvinHallwayBackground.tscn" id="3_moit6"]
 [ext_resource type="PackedScene" uid="uid://6mwtiksrfidh" path="res://MainMenu/debugging.tscn" id="5_11hwv"]
 [ext_resource type="Script" uid="uid://cgnlh8ubsqiok" path="res://Ep1/Characters/jolina_a_1.gd" id="5_27dpn"]
 [ext_resource type="PackedScene" uid="uid://dt2xykj4k2h6m" path="res://Ep1/Characters/Jolina.tscn" id="6_1an53"]
@@ -13,17 +13,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lhwjw"]
 size = Vector2(127, 128)
 
-[sub_resource type="LabelSettings" id="LabelSettings_lhwjw"]
-font_size = 63
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_27dpn"]
 size = Vector2(127, 130)
-
-[sub_resource type="LabelSettings" id="LabelSettings_cdqbc"]
-font_size = 33
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_1an53"]
-radius = 1049.1449
 
 [sub_resource type="Animation" id="Animation_27dpn"]
 resource_name = "FadeIn"
@@ -436,186 +427,13 @@ _data = {
 }
 
 [node name="FloorOne" type="Node2D" unique_id=1612319344]
-script = ExtResource("1_27dpn")
 metadata/_edit_vertical_guides_ = [5715.0]
 
-[node name="201" type="Node2D" parent="." unique_id=1814370202]
-unique_name_in_owner = true
-modulate = Color(1, 1, 1, 0.31500003)
-position = Vector2(2232, 486)
-scale = Vector2(1.9324505, 2.848267)
-metadata/_edit_group_ = true
+[node name="DialogueEvent" type="Node" parent="." unique_id=1058789679]
+script = ExtResource("2_moit6")
 
-[node name="Classroom base" type="Node2D" parent="201" unique_id=2058184713]
-position = Vector2(-1004.92615, -33.704712)
-scale = Vector2(5.748607, 1.9672481)
-
-[node name="Icon" type="Sprite2D" parent="201/Classroom base" unique_id=582452357]
-modulate = Color(0.24526232, 0.22935726, 0, 0.23300001)
-position = Vector2(176.70386, -2.801241)
-scale = Vector2(1.5190313, 1.0437695)
-texture = ExtResource("3_11hwv")
-
-[node name="Icon2" type="Sprite2D" parent="201" unique_id=326428522]
-position = Vector2(427.95404, 0)
-texture = ExtResource("3_11hwv")
-
-[node name="Label2" type="Label" parent="201/Icon2" unique_id=1326714772]
-offset_left = -36.22351
-offset_top = -90.2303
-offset_right = 40.77649
-offset_bottom = -67.2303
-text = "Room 101"
-
-[node name="Icon" type="Sprite2D" parent="201" unique_id=1794420440]
-position = Vector2(-406.21994, 0)
-texture = ExtResource("3_11hwv")
-
-[node name="Label" type="Label" parent="201/Icon" unique_id=69611706]
-offset_left = -42.43335
-offset_top = -90.2303
-offset_right = 34.56665
-offset_bottom = -67.2303
-text = "Room 101"
-
-[node name="202" type="Node2D" parent="." unique_id=129788510]
-unique_name_in_owner = true
-modulate = Color(1, 1, 1, 0.31500003)
-position = Vector2(4385, 486)
-scale = Vector2(1.9324505, 2.848267)
-metadata/_edit_group_ = true
-
-[node name="Classroom base" type="Node2D" parent="202" unique_id=1358518325]
-position = Vector2(-1004.92615, -33.704712)
-scale = Vector2(5.748607, 1.9672481)
-
-[node name="Icon" type="Sprite2D" parent="202/Classroom base" unique_id=1449612603]
-modulate = Color(0.24526232, 0.22935726, 0, 0.23300001)
-position = Vector2(176.70386, -2.801241)
-scale = Vector2(1.5190313, 1.0437695)
-texture = ExtResource("3_11hwv")
-
-[node name="Icon2" type="Sprite2D" parent="202" unique_id=775576488]
-position = Vector2(427.95404, 0)
-texture = ExtResource("3_11hwv")
-
-[node name="Label2" type="Label" parent="202/Icon2" unique_id=398815292]
-offset_left = -36.22351
-offset_top = -90.2303
-offset_right = 40.77649
-offset_bottom = -67.2303
-text = "Room 103"
-
-[node name="Icon" type="Sprite2D" parent="202" unique_id=1384198859]
-position = Vector2(-406.21994, 0)
-texture = ExtResource("3_11hwv")
-
-[node name="Label" type="Label" parent="202/Icon" unique_id=1913033781]
-offset_left = -42.43335
-offset_top = -90.2303
-offset_right = 34.56665
-offset_bottom = -67.2303
-text = "Room 103"
-
-[node name="203" type="Node2D" parent="." unique_id=1175603831]
-unique_name_in_owner = true
-modulate = Color(1, 1, 1, 0.31500003)
-position = Vector2(6538, 486)
-scale = Vector2(1.9324505, 2.848267)
-metadata/_edit_group_ = true
-
-[node name="Classroom base" type="Node2D" parent="203" unique_id=1733799996]
-position = Vector2(-1004.92615, -33.704712)
-scale = Vector2(5.748607, 1.9672481)
-
-[node name="Icon" type="Sprite2D" parent="203/Classroom base" unique_id=525499706]
-modulate = Color(0.24526232, 0.22935726, 0, 0.23300001)
-position = Vector2(176.70386, -2.801241)
-scale = Vector2(1.5190313, 1.0437695)
-texture = ExtResource("3_11hwv")
-
-[node name="Icon2" type="Sprite2D" parent="203" unique_id=169721908]
-position = Vector2(427.95404, 0)
-texture = ExtResource("3_11hwv")
-
-[node name="Label2" type="Label" parent="203/Icon2" unique_id=521726426]
-offset_left = -36.22351
-offset_top = -90.2303
-offset_right = 40.77649
-offset_bottom = -67.2303
-text = "Room 105"
-
-[node name="Icon" type="Sprite2D" parent="203" unique_id=730341558]
-position = Vector2(-406.21994, 0)
-texture = ExtResource("3_11hwv")
-
-[node name="Label" type="Label" parent="203/Icon" unique_id=532457749]
-offset_left = -42.43335
-offset_top = -90.2303
-offset_right = 34.56665
-offset_bottom = -67.2303
-text = "Room 105"
-
-[node name="204" type="Node2D" parent="." unique_id=1358547286]
-unique_name_in_owner = true
-modulate = Color(1, 1, 1, 0.31500003)
-position = Vector2(8696, 486)
-scale = Vector2(1.9324505, 2.848267)
-metadata/_edit_group_ = true
-
-[node name="Classroom base" type="Node2D" parent="204" unique_id=85454293]
-position = Vector2(-1004.92615, -33.704712)
-scale = Vector2(5.748607, 1.9672481)
-
-[node name="Icon" type="Sprite2D" parent="204/Classroom base" unique_id=1396268750]
-modulate = Color(0.24526232, 0.22935726, 0, 0.23300001)
-position = Vector2(176.70386, -2.801241)
-scale = Vector2(1.5190313, 1.0437695)
-texture = ExtResource("3_11hwv")
-
-[node name="Icon2" type="Sprite2D" parent="204" unique_id=885540434]
-position = Vector2(427.95404, 0)
-texture = ExtResource("3_11hwv")
-
-[node name="Label2" type="Label" parent="204/Icon2" unique_id=1720800642]
-offset_left = -36.22351
-offset_top = -90.2303
-offset_right = 40.77649
-offset_bottom = -67.2303
-text = "Room 107"
-
-[node name="Icon" type="Sprite2D" parent="204" unique_id=1046879605]
-position = Vector2(-406.21994, 0)
-texture = ExtResource("3_11hwv")
-
-[node name="Label" type="Label" parent="204/Icon" unique_id=563141422]
-offset_left = -64.16716
-offset_top = -90.2303
-offset_right = 12.83284
-offset_bottom = -67.2303
-text = "Room 107"
-
-[node name="Stairs" type="Node2D" parent="." unique_id=369740609]
-position = Vector2(290.03027, 389.99997)
-scale = Vector2(14.219396, 5.603248)
-metadata/_edit_group_ = true
-
-[node name="Icon" type="Sprite2D" parent="Stairs" unique_id=1181132052]
-modulate = Color(0.03501795, 0.24763227, 0.3095626, 0.3529412)
-position = Vector2(4.386902e-05, 0)
-scale = Vector2(0.9999998, 0.99999994)
-texture = ExtResource("3_11hwv")
-
-[node name="Stairs2" type="Node2D" parent="." unique_id=844808301]
-position = Vector2(10701, 389.99997)
-scale = Vector2(14.219396, 5.603248)
-metadata/_edit_group_ = true
-
-[node name="Icon" type="Sprite2D" parent="Stairs2" unique_id=638021587]
-modulate = Color(0.03501795, 0.24763227, 0.3095626, 0.3529412)
-position = Vector2(4.386902e-05, 0)
-scale = Vector2(0.9999998, 0.99999994)
-texture = ExtResource("3_11hwv")
+[node name="CameraEvent" type="Node" parent="." unique_id=667955256]
+script = ExtResource("3_1jegp")
 
 [node name="GroundFloor" type="StaticBody2D" parent="." unique_id=289083114]
 unique_name_in_owner = true
@@ -659,14 +477,6 @@ texture = ExtResource("3_11hwv")
 position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_lhwjw")
 
-[node name="Label" type="Label" parent="." unique_id=4183968]
-offset_left = -361.0
-offset_top = 96.0
-offset_right = 184.0
-offset_bottom = 183.0
-text = "Stairs to 2nd floor"
-label_settings = SubResource("LabelSettings_lhwjw")
-
 [node name="ChairObstacles" type="StaticBody2D" parent="." unique_id=558117325]
 modulate = Color(1, 1, 1, 0.56700003)
 position = Vector2(8996, 486)
@@ -693,64 +503,16 @@ shape = SubResource("RectangleShape2D_27dpn")
 disabled = true
 debug_color = Color(0.841581, 0.32422376, 0.5307359, 0.41960785)
 
-[node name="dev-ken" type="Label" parent="." unique_id=2108762613]
-offset_left = 8644.0
-offset_top = 487.0
-offset_right = 9118.0
-offset_bottom = 590.0
-text = "These are chairs stacked, 
-as an obstacle for the player"
-label_settings = SubResource("LabelSettings_cdqbc")
-
-[node name="dev-ken2" type="Label" parent="." unique_id=230465718]
-offset_left = 4070.0
-offset_top = 390.0
-offset_right = 4747.0
-offset_bottom = 534.0
-text = "This is a way to prevent, the player
-from proceeding until the player reach the
-firefly scene!"
-label_settings = SubResource("LabelSettings_cdqbc")
-
-[node name="dev-ken3" type="Label" parent="." unique_id=1570416805]
-offset_left = 6045.0
-offset_top = -129.0
-offset_right = 6722.0
-offset_bottom = 15.0
-text = "The player should not be able to move unless, until the firefly scene"
-label_settings = SubResource("LabelSettings_cdqbc")
-
-[node name="dev-ken4" type="Label" parent="." unique_id=642847268]
-offset_left = 6099.0
-offset_top = 244.0
-offset_right = 6245.0
-offset_bottom = 317.0
-text = "x 6538"
-label_settings = SubResource("LabelSettings_cdqbc")
-
-[node name="dev-ken5" type="Label" parent="." unique_id=1035163693]
-offset_left = 6536.0
-offset_top = 112.0
-offset_right = 6682.0
-offset_bottom = 185.0
-text = "firefly
-x = 6384
-y = 472"
-label_settings = SubResource("LabelSettings_cdqbc")
-
-[node name="MarvinHallwayBackground" parent="." unique_id=1129669861 instance=ExtResource("3_moit6")]
-unique_name_in_owner = true
-z_index = -7
-position = Vector2(5020, -356)
-scale = Vector2(1.5, 1.5)
-
 [node name="Player" type="Node2D" parent="." unique_id=626920034]
+unique_name_in_owner = true
 
 [node name="JolinaA1" parent="Player" unique_id=1524370565 instance=ExtResource("6_cdqbc")]
+unique_name_in_owner = true
 position = Vector2(6538, 511)
 script = ExtResource("5_27dpn")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1812539742]
+unique_name_in_owner = true
 position = Vector2(6538, 431)
 offset = Vector2(0, -50)
 zoom = Vector2(0.65, 0.65)
@@ -762,6 +524,7 @@ offset_right = -634.0
 offset_bottom = -407.0
 
 [node name="Jolina" parent="Player" unique_id=810497922 instance=ExtResource("6_1an53")]
+unique_name_in_owner = true
 position = Vector2(6538, 511)
 
 [node name="Dialogue" parent="." unique_id=704191399 instance=ExtResource("6_11hwv")]
@@ -790,26 +553,20 @@ offset_right = 28.0
 offset_bottom = -33.0
 text = "FIREFLY"
 
-[node name="StairsNode" type="Node2D" parent="." unique_id=2062412809]
-position = Vector2(294, 391)
-metadata/_edit_group_ = true
-
-[node name="Area2D" type="Area2D" parent="StairsNode" unique_id=1390843286]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StairsNode/Area2D" unique_id=784379730]
-shape = SubResource("CircleShape2D_1an53")
-debug_color = Color(0.6931277, 0.48007256, 0.35726634, 0.41960785)
-
 [node name="Event" type="AnimationPlayer" parent="." unique_id=1718004964]
+unique_name_in_owner = true
 root_node = NodePath("../CameraZoom")
 libraries/ = SubResource("AnimationLibrary_11hwv")
 
 [node name="CameraZoom" type="AnimationPlayer" parent="." unique_id=1110459068]
+unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_1jegp")
 
 [node name="Firefly" type="AnimationPlayer" parent="." unique_id=386881771]
+unique_name_in_owner = true
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=536029578]
+unique_name_in_owner = true
 visible = false
 offset_left = 5008.0
 offset_top = -319.0
@@ -828,7 +585,5 @@ parameters/looping = false
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=421710373]
 
-[connection signal="body_entered" from="StairsNode/Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="StairsNode/Area2D" to="." method="_on_area_2d_body_exited"]
-[connection signal="animation_finished" from="Event" to="." method="_on_event_animation_finished"]
-[connection signal="animation_finished" from="CameraZoom" to="." method="_on_camera_zoom_animation_finished"]
+[connection signal="animation_finished" from="Event" to="DialogueEvent" method="_on_event_animation_finished"]
+[connection signal="animation_finished" from="CameraZoom" to="CameraEvent" method="_on_camera_zoom_animation_finished"]
