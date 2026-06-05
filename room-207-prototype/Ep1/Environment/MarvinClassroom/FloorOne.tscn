@@ -602,5 +602,30 @@ parameters/looping = false
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=421710373]
 
+[node name="devNote" type="Label" parent="." unique_id=688200195]
+offset_left = 5640.0
+offset_top = 1008.0
+offset_right = 6921.0
+offset_bottom = 1073.0
+theme_override_font_sizes/font_size = 47
+text = "- Keep in mind Jolina is bigger than the placeholder here!"
+
+[node name="devNote2" type="Label" parent="." unique_id=767353853]
+offset_left = 5640.0
+offset_top = 1112.0
+offset_right = 6921.0
+offset_bottom = 1177.0
+theme_override_font_sizes/font_size = 47
+text = "- The background setting is night time, we will use point light node to achieve that!"
+
+[node name="devNote3" type="Label" parent="." unique_id=417815304]
+offset_left = 8392.0
+offset_top = 968.0
+offset_right = 9930.0
+offset_bottom = 1101.0
+theme_override_font_sizes/font_size = 47
+text = "- This is a placeholder for the stacks chairs, it's to prevent the player
+going to the right side!"
+
 [connection signal="animation_finished" from="Event" to="DialogueEvent" method="_on_event_animation_finished"]
 [connection signal="animation_finished" from="CameraZoom" to="CameraEvent" method="_on_camera_zoom_animation_finished"]

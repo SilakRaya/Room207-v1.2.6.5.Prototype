@@ -92,4 +92,13 @@ theme_override_constants/margin_bottom = 15
 layout_mode = 2
 sceneTo = "res://MainMenu/MainMenu.tscn"
 
+[node name="devNote" type="Label" parent="." unique_id=1580373171]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 783.0
+offset_right = 340.0
+offset_bottom = 806.0
+text = "The user should be able to scroll this!
+need assignation!"
+
 [connection signal="pressed" from="MarginContainer/returnBtn" to="MarginContainer/returnBtn" method="_on_pressed"]
