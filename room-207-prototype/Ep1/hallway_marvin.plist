@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>Door_B_P0000</key>
+			<dict>
+				<key>frame</key>
+				<string>{{10,10},{134,255}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{134,255}}</string>
+				<key>sourceSize</key>
+				<string>{134,255}</string>
+			</dict>
+			<key>door_base_marvin0000</key>
+			<dict>
+				<key>frame</key>
+				<string>{{154,10},{132,292}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{132,292}}</string>
+				<key>sourceSize</key>
+				<string>{132,292}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>realTextureFileName</key>
+			<string>hallway_marvin.png</string>
+			<key>size</key>
+			<string>{512,512}</string>
+			<key>textureFileName</key>
+			<string>hallway_marvin.png</string>
+		</dict>
+	</dict>
+</plist>

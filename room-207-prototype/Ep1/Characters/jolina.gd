@@ -3,6 +3,9 @@ extends CharacterBody2D
 const SPEED = 500.0
 const GRAVITY = 980.0
 
+func _ready() -> void:
+	add_to_group("player")
+
 func _physics_process(delta: float) -> void:
 	# Apply gravity constantly
 	velocity.y += GRAVITY * delta

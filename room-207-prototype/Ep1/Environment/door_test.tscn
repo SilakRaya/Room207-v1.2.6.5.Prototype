@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dbt52737kcn0w"]
+
+[ext_resource type="Texture2D" uid="uid://c1wdkxldjwmpm" path="res://Ep1/hallway_marvin.png" id="1_fgpu3"]
+[ext_resource type="Script" uid="uid://dyvfjnstutj5f" path="res://Ep1/Environment/door_test.gd" id="1_hljts"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hljts"]
+size = Vector2(630, 306)
+
+[node name="DoorTest" type="Area2D" unique_id=2037676912]
+script = ExtResource("1_hljts")
+
+[node name="Door_Par" type="Sprite2D" parent="." unique_id=184520510]
+position = Vector2(-303, -279)
+texture = ExtResource("1_fgpu3")
+offset = Vector2(304, 297)
+region_enabled = true
+region_rect = Rect2(10, 9, 134, 256)
+
+[node name="Door" type="Sprite2D" parent="." unique_id=1148513890]
+position = Vector2(-303, -279)
+texture = ExtResource("1_fgpu3")
+offset = Vector2(303, 279)
+region_enabled = true
+region_rect = Rect2(155, 10, 131, 293)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1422566541]
+position = Vector2(-11, -12)
+shape = SubResource("RectangleShape2D_hljts")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

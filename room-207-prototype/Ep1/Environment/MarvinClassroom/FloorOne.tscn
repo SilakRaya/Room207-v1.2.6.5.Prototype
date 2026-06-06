@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://ea61sjshx1fs" path="res://Ep1/Scenes/dialogue_event.gd" id="2_moit6"]
 [ext_resource type="Script" uid="uid://0o0r4ybyg4uc" path="res://Ep1/Scenes/camera_event.gd" id="3_1jegp"]
 [ext_resource type="Texture2D" uid="uid://cqlya3pwemonw" path="res://icon.svg" id="3_11hwv"]
-[ext_resource type="PackedScene" uid="uid://wujnri773tap" path="res://Ep1/Environment/MarvinHallway/MarvinHallwayBackground.tscn" id="3_moit6"]
 [ext_resource type="PackedScene" uid="uid://6mwtiksrfidh" path="res://MainMenu/debugging.tscn" id="5_11hwv"]
 [ext_resource type="Script" uid="uid://cgnlh8ubsqiok" path="res://Ep1/Characters/jolina_a_1.gd" id="5_27dpn"]
 [ext_resource type="PackedScene" uid="uid://dt2xykj4k2h6m" path="res://Ep1/Characters/Jolina.tscn" id="6_1an53"]
@@ -441,7 +440,6 @@ script = ExtResource("3_1jegp")
 
 [node name="GroundFloor" type="StaticBody2D" parent="." unique_id=289083114]
 unique_name_in_owner = true
-visible = false
 position = Vector2(5465, 845)
 scale = Vector2(104.98642, -2.9432998)
 metadata/_edit_group_ = true
@@ -507,21 +505,6 @@ position = Vector2(-0.5, 1)
 shape = SubResource("RectangleShape2D_27dpn")
 disabled = true
 debug_color = Color(0.841581, 0.32422376, 0.5307359, 0.41960785)
-
-[node name="MarvinHallwayBackground" parent="." unique_id=1129669861 instance=ExtResource("3_moit6")]
-z_index = -15
-position = Vector2(5017, -355)
-scale = Vector2(1.5, 1.5)
-
-[node name="MarvinHallwayBackground2" parent="." unique_id=664493045 instance=ExtResource("3_moit6")]
-z_index = -15
-position = Vector2(2022, -355)
-scale = Vector2(1.5, 1.5)
-
-[node name="MarvinHallwayBackground3" parent="." unique_id=1843158306 instance=ExtResource("3_moit6")]
-z_index = -15
-position = Vector2(-976, -352)
-scale = Vector2(1.5, 1.5)
 
 [node name="Player" type="Node2D" parent="." unique_id=626920034]
 unique_name_in_owner = true

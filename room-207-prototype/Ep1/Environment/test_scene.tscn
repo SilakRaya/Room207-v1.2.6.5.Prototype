@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://c53jkkumnfp82"]
+
+[ext_resource type="PackedScene" uid="uid://dt2xykj4k2h6m" path="res://Ep1/Characters/Jolina.tscn" id="1_kqm28"]
+[ext_resource type="Texture2D" uid="uid://c1wdkxldjwmpm" path="res://Ep1/hallway_marvin.png" id="2_kqm28"]
+[ext_resource type="Script" uid="uid://8k22rww7u18h" path="res://Ep1/Environment/Tracker.gd" id="3_4157h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kqm28"]
+size = Vector2(1936.5, 61)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_toqex"]
+size = Vector2(166.74997, 332)
+
+[node name="TestScene" type="Node2D" unique_id=726628597]
+
+[node name="Jolina" parent="." unique_id=810497922 instance=ExtResource("1_kqm28")]
+position = Vector2(1033, 399)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=864794489]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1808104384]
+position = Vector2(718, 556)
+shape = SubResource("RectangleShape2D_kqm28")
+
+[node name="Door_Par" type="Sprite2D" parent="." unique_id=114615745]
+position = Vector2(522, 378.5)
+texture = ExtResource("2_kqm28")
+region_enabled = true
+region_rect = Rect2(10, 9, 134, 256)
+
+[node name="Door" type="Sprite2D" parent="." unique_id=1820534663]
+position = Vector2(521, 360.5)
+texture = ExtResource("2_kqm28")
+region_enabled = true
+region_rect = Rect2(155, 10, 131, 293)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=416063726]
+script = ExtResource("3_4157h")
+
+[node name="A1" type="Area2D" parent="Node2D" unique_id=1624815999]
+unique_name_in_owner = true
+position = Vector2(403.99997, 439.99997)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/A1" unique_id=1715379382]
+shape = SubResource("RectangleShape2D_toqex")
+
+[node name="A2" type="Area2D" parent="Node2D" unique_id=471716028]
+unique_name_in_owner = true
+position = Vector2(236, 440)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/A2" unique_id=486405165]
+shape = SubResource("RectangleShape2D_toqex")
+
+[node name="A3" type="Area2D" parent="Node2D" unique_id=240227248]
+unique_name_in_owner = true
+position = Vector2(69, 440)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/A3" unique_id=579740322]
+shape = SubResource("RectangleShape2D_toqex")
+
+[node name="A4" type="Area2D" parent="Node2D" unique_id=600676449]
+unique_name_in_owner = true
+position = Vector2(-98, 439)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/A4" unique_id=1611633235]
+shape = SubResource("RectangleShape2D_toqex")
+
+[connection signal="body_entered" from="Node2D/A1" to="Node2D" method="_on_a_1_body_entered"]
+[connection signal="body_entered" from="Node2D/A2" to="Node2D" method="_on_a_2_body_entered"]
+[connection signal="body_entered" from="Node2D/A3" to="Node2D" method="_on_a_3_body_entered"]
+[connection signal="body_entered" from="Node2D/A4" to="Node2D" method="_on_a_4_body_entered"]
