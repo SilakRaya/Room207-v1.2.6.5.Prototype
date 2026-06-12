@@ -28,3 +28,11 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if anim_name == "FadeIn":
 		$ColorRect.visible = false
 		FADE_IN_FINISHED = true
+
+
+func _on_new_game_mouse_entered() -> void:
+	pass # Replace with function body.
+
+
+func _on_new_game_mouse_exited() -> void:
+	pass # Replace with function body.

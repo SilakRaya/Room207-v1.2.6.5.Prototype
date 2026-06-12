@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cjvplrxkwassx"]
+
+[ext_resource type="PackedScene" uid="uid://twyhfiebyqfq" path="res://Blender/beach.glb" id="1_2oeep"]
+
+[node name="beachSide" type="Node3D" unique_id=1120825524]
+
+[node name="beach" parent="." unique_id=1837029796 instance=ExtResource("1_2oeep")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.108139396, 0, 0.4718356)

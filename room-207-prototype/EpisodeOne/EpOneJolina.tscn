@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cltxe0l12utgn"]
+
+[ext_resource type="Texture2D" uid="uid://bix07m6hwcm0u" path="res://SilakRayaIntro/textures/instance25.png" id="1_a1mft"]
+[ext_resource type="FontFile" uid="uid://4scieg81k82o" path="res://Fonts/fibre-font.otf" id="2_hp7rs"]
+[ext_resource type="Script" uid="uid://c08sghksh2358" path="res://Scripts/button.gd" id="3_uyr6g"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_c2amt"]
+font = ExtResource("2_hp7rs")
+font_size = 140
+font_color = Color(0, 0, 0, 1)
+
+[node name="EpisodeOne" type="Node2D" unique_id=593612717]
+
+[node name="Instance25" type="Sprite2D" parent="." unique_id=2110446789]
+position = Vector2(669, 387)
+texture = ExtResource("1_a1mft")
+
+[node name="Label" type="Label" parent="." unique_id=1023112734]
+offset_left = 86.00001
+offset_top = 258.0
+offset_right = 1343.0
+offset_bottom = 398.0
+scale = Vector2(0.83, 0.83)
+text = "Jolina story in works"
+label_settings = SubResource("LabelSettings_c2amt")
+
+[node name="GO BACK" type="Button" parent="." unique_id=1148956005]
+offset_left = 464.0
+offset_top = 409.0
+offset_right = 791.0
+offset_bottom = 519.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hp7rs")
+theme_override_font_sizes/font_size = 101
+text = "GO BACK"
+flat = true
+script = ExtResource("3_uyr6g")
+
+[connection signal="pressed" from="GO BACK" to="GO BACK" method="_on_pressed"]

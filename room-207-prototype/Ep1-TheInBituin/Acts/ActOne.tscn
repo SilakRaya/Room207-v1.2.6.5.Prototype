@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://c77vuflp4g84q"]
+
+[ext_resource type="PackedScene" uid="uid://dt2xykj4k2h6m" path="res://Ep1-TheInBituin/Characters/Jolina.tscn" id="1_ofxwg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ofxwg"]
+font_size = 66
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ofxwg"]
+size = Vector2(114, 114)
+
+[node name="ActOne" type="Node2D" unique_id=1279129089]
+
+[node name="Jolina" parent="." unique_id=810497922 instance=ExtResource("1_ofxwg")]
+position = Vector2(632, 408)
+
+[node name="Label" type="Label" parent="." unique_id=523504846]
+offset_left = 56.0
+offset_top = 744.0
+offset_right = 900.0
+offset_bottom = 835.0
+text = "Jolina waking getting up animation first as well dialogue, before she can move"
+label_settings = SubResource("LabelSettings_ofxwg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1825655386]
+position = Vector2(192, 448)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1643910251]
+position = Vector2(47, 47)
+shape = SubResource("RectangleShape2D_ofxwg")
+debug_color = Color(0.95521265, 1.1551381e-06, 0.5469349, 0.41960785)

@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://c6kngdibg6o6s"]
+
+[ext_resource type="Texture2D" uid="uid://cqlya3pwemonw" path="res://icon.svg" id="1_7peb6"]
+[ext_resource type="Script" uid="uid://3ccaa7v283xh" path="res://EpisodeOne/ASSets/bush.gd" id="1_33fx5"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_33fx5"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_33fx5"]
+
+[node name="Bush" type="StaticBody3D" unique_id=408886770 groups=["bush.gd", "jolina.gd"]]
+script = ExtResource("1_33fx5")
+
+[node name="BushSpiky" type="Area3D" parent="." unique_id=633744889 groups=["bush.gd", "jolina.gd"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BushSpiky" unique_id=1715417781]
+shape = SubResource("CylinderShape3D_33fx5")
+disabled = true
+
+[node name="Sprite3D" type="Sprite3D" parent="BushSpiky/CollisionShape3D" unique_id=710874001]
+texture = ExtResource("1_7peb6")
+
+[node name="BushBerry" type="Area3D" parent="." unique_id=1967724932]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5604458, 0, 0.20149851)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BushBerry" unique_id=760010706]
+shape = SubResource("CylinderShape3D_33fx5")
+disabled = true
+
+[node name="Sprite3D" type="Sprite3D" parent="BushBerry/CollisionShape3D" unique_id=1080156722]
+texture = ExtResource("1_7peb6")
+
+[node name="BushMan" type="Area3D" parent="." unique_id=1994713249 groups=["bush.gd", "jolina.gd"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9436297, 0, 0.25057364)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BushMan" unique_id=1284101490]
+shape = SubResource("CylinderShape3D_33fx5")
+disabled = true
+
+[node name="Sprite3D" type="Sprite3D" parent="BushMan/CollisionShape3D" unique_id=1456310410]
+texture = ExtResource("1_7peb6")
+
+[node name="BushArea4" type="Area3D" parent="." unique_id=1627185466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.4732866, 0, 0.3020563)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BushArea4" unique_id=1700905608]
+shape = SubResource("CylinderShape3D_33fx5")
+disabled = true
+
+[node name="Sprite3D" type="Sprite3D" parent="BushArea4/CollisionShape3D" unique_id=1821337671]
+texture = ExtResource("1_7peb6")
+
+[node name="Collision Child of bush" type="CollisionShape3D" parent="." unique_id=1984561358]
+shape = SubResource("SphereShape3D_33fx5")

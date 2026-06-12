@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://by8g0eys7wt8k" path="res://Ep1/Acosta/Jolina's Background.jpg" id="1_cruaa"]
 [ext_resource type="Script" uid="uid://d3m3r3ctm81tm" path="res://MainMenu/main_menu.gd" id="1_lbqne"]
+[ext_resource type="Script" uid="uid://b4yrrtw7qey0y" path="res://MainMenu/button_anim.gd" id="2_3p42x"]
+[ext_resource type="Script" uid="uid://cvnxd6o04bvtq" path="res://MainMenu/menu_anim.gd" id="2_430ii"]
 [ext_resource type="FontFile" uid="uid://4scieg81k82o" path="res://Fonts/fibre-font.otf" id="2_b76km"]
 [ext_resource type="Texture2D" uid="uid://cw5kxmvo6iks8" path="res://SilakRayaLogo.png" id="3_b76km"]
 
@@ -69,6 +71,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_lbqne")
 
+[node name="ButtonAnim" type="Node" parent="." unique_id=1127723513]
+script = ExtResource("2_3p42x")
+
+[node name="MenuAnim" type="Node" parent="." unique_id=1201174425]
+script = ExtResource("2_430ii")
+
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1132093534]
 layout_mode = 0
 anchor_right = 1.0
@@ -85,9 +93,12 @@ centered = false
 
 [node name="CenterContainer" type="CenterContainer" parent="PanelContainer" unique_id=4313443]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="Menu" type="VBoxContainer" parent="PanelContainer/CenterContainer" unique_id=688609338]
 layout_mode = 2
+theme_override_constants/separation = 15
 alignment = 1
 
 [node name="Room207" type="Label" parent="PanelContainer/CenterContainer/Menu" unique_id=650662992]
@@ -98,7 +109,7 @@ label_settings = SubResource("LabelSettings_lbqne")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="NewGame" type="Button" parent="PanelContainer/CenterContainer/Menu" unique_id=1487876664]
+[node name="NewGame" type="Button" parent="PanelContainer/CenterContainer/Menu" unique_id=1487876664 groups=["menuBtn"]]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -183,8 +194,16 @@ color = Color(0, 0, 0, 1)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2004379967]
 libraries/ = SubResource("AnimationLibrary_3p42x")
 
+[connection signal="mouse_entered" from="PanelContainer/CenterContainer/Menu/NewGame" to="ButtonAnim" method="_on_new_game_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/CenterContainer/Menu/NewGame" to="ButtonAnim" method="_on_new_game_mouse_exited"]
 [connection signal="pressed" from="PanelContainer/CenterContainer/Menu/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="mouse_entered" from="PanelContainer/CenterContainer/Menu/Options" to="ButtonAnim" method="_on_options_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/CenterContainer/Menu/Options" to="ButtonAnim" method="_on_options_mouse_exited"]
 [connection signal="pressed" from="PanelContainer/CenterContainer/Menu/Options" to="." method="_on_options_pressed"]
+[connection signal="mouse_entered" from="PanelContainer/CenterContainer/Menu/Credits" to="ButtonAnim" method="_on_credits_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/CenterContainer/Menu/Credits" to="ButtonAnim" method="_on_credits_mouse_exited"]
 [connection signal="pressed" from="PanelContainer/CenterContainer/Menu/Credits" to="." method="_on_credits_pressed"]
+[connection signal="mouse_entered" from="PanelContainer/CenterContainer/Menu/Exit" to="ButtonAnim" method="_on_exit_mouse_entered"]
+[connection signal="mouse_exited" from="PanelContainer/CenterContainer/Menu/Exit" to="ButtonAnim" method="_on_exit_mouse_exited"]
 [connection signal="pressed" from="PanelContainer/CenterContainer/Menu/Exit" to="." method="_on_exit_pressed"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

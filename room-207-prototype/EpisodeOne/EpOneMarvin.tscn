@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bpw4016tagppg"]
+
+[ext_resource type="Texture2D" uid="uid://bix07m6hwcm0u" path="res://SilakRayaIntro/textures/instance25.png" id="1_745o6"]
+[ext_resource type="FontFile" uid="uid://4scieg81k82o" path="res://Fonts/fibre-font.otf" id="2_uhsl6"]
+[ext_resource type="Script" uid="uid://c08sghksh2358" path="res://Scripts/button.gd" id="3_omgjd"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1bib0"]
+font = ExtResource("2_uhsl6")
+font_size = 140
+font_color = Color(0, 0, 0, 1)
+
+[node name="EpOneMarvin" type="Node2D" unique_id=476928143]
+
+[node name="Instance25" type="Sprite2D" parent="." unique_id=1594152685]
+position = Vector2(627, 374)
+texture = ExtResource("1_745o6")
+
+[node name="Label" type="Label" parent="." unique_id=1298475293]
+offset_left = 152.0
+offset_top = 270.0
+offset_right = 1449.0
+offset_bottom = 410.0
+scale = Vector2(0.77, 0.77)
+text = "Marvin story in works"
+label_settings = SubResource("LabelSettings_1bib0")
+
+[node name="GO BACK" type="Button" parent="." unique_id=1213398199]
+offset_left = 464.0
+offset_top = 409.0
+offset_right = 791.0
+offset_bottom = 519.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_uhsl6")
+theme_override_font_sizes/font_size = 101
+text = "GO BACK"
+flat = true
+script = ExtResource("3_omgjd")
+
+[connection signal="pressed" from="GO BACK" to="GO BACK" method="_on_pressed"]

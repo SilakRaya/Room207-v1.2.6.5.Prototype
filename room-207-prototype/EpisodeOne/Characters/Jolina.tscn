@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://brsx72wq4rjqk"]
+
+[ext_resource type="Script" uid="uid://b6v8ksp4xpox2" path="res://EpisodeOne/Characters/jolina.gd" id="1_w0kse"]
+[ext_resource type="Texture2D" uid="uid://cqlya3pwemonw" path="res://icon.svg" id="2_fhl5q"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f3c18"]
+size = Vector3(1, 1.1602783, 1)
+
+[node name="Jolina" type="CharacterBody3D" unique_id=1425489057]
+script = ExtResource("1_w0kse")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1690335307]
+transform = Transform3D(1, 0, 0, 0, 2.25, 0, 0, 0, 1, 0, 0, 0)
+texture = ExtResource("2_fhl5q")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1922915636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08013916, 0)
+shape = SubResource("BoxShape3D_f3c18")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=747326533]
+transform = Transform3D(1, 0, 0, 0, 0.87221444, 0.4891237, 0, -0.4891237, 0.87221444, 0, 4.9553494, 6.552339)

@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://buhpeqm887jdw"]
+
+[ext_resource type="PackedScene" uid="uid://c6c6pj7cdd71k" path="res://EpisodeOne/Environment/beach.tscn" id="2_a4jnn"]
+[ext_resource type="PackedScene" uid="uid://brsx72wq4rjqk" path="res://EpisodeOne/Characters/Jolina.tscn" id="2_ekh7m"]
+
+[node name="ActOne" type="Node3D" unique_id=1627605853]
+
+[node name="CharacterBody3D" parent="." unique_id=1425489057 instance=ExtResource("2_ekh7m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2.4130538)
+
+[node name="beach" parent="." unique_id=1837029796 instance=ExtResource("2_a4jnn")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="Label3D" type="Label3D" parent="." unique_id=1168788337]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.515729, 0)
+text = "The mountains needs to be a bit higher"
+font_size = 205
+
+[node name="Label3D2" type="Label3D" parent="." unique_id=1200786510]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 5.515729, 16)
+text = "Work on placeholders stuff"
+font_size = 205
+
+[node name="Label3D3" type="Label3D" parent="." unique_id=1087756013]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 5.515729, 16)
+text = "The camera itself shoulld be automatic now, not following the player"
+font_size = 205
